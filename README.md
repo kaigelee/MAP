@@ -33,8 +33,8 @@ Pending!
 ## Experimental Results
 
 <p align="center">
-  <img src="figs/results" alt="results-of-our-method" width="800"/></br>
-  <span align="center">An overview of the basic architecture of our proposed Context and Spatial Feature Calibration Network (CSFCN). </span> 
+  <img src="figs/results.png" alt="results-of-our-method" width="800"/></br>
+  <span align="center">ASR ($\%$) of various transfer-based attacks against normally trained models, and their enhanced version by our method, using Res-18 as the surrogate model. </span> 
 </p>
 Our MAP achieves noticeable performance improvements on various black-box attack methods.
 
