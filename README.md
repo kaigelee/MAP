@@ -41,8 +41,8 @@ Our MAP achieves noticeable performance improvements on various black-box attack
 
 
 ## TODO
-- [ ] Refactor and clean code
-- [ ] Organize all codes and upload them
+- [ ] Upload the updated code
+- [ ] Reorganize the code repository
 
 ## Acknowledgements
 
