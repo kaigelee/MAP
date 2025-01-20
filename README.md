@@ -20,3 +20,12 @@ We randomly sample 1,000 images from ImageNet validate set, in which each image 
 python main.py --input_dir ./path/to/data --output_dir adv_data/mifgsm/resnet18 --attack mifgsm --model=resnet18 --mask=True
 python main.py --input_dir ./path/to/data --output_dir adv_data/mifgsm/resnet18 --eval
 ```
+
+
+## Acknowledgements
+
+This project is based on the following open-source projects. We thank their
+authors for making the source code publically available.
+
+* [SIA](https://github.com/xiaosen-wang/SIT)
+* [TransferAttack](https://github.com/Trustworthy-AI-Group/TransferAttack)
