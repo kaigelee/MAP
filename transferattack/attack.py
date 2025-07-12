@@ -64,6 +64,26 @@ class Attack(object):
         else:
             return load_single_model(model_name)
 
+    
+    @torch.no_grad()
+    def generate_mask(self, imgs,ratio):
+        B, _, H, W = imgs.shape
+
+        mshape = B, 1, round(H / 16), round(
+            W / 16)
+        input_mask = torch.rand(mshape, device=imgs.device)
+        input_mask = (input_mask > ratio).float()
+        # input_mask = F.interpolate(input_mask, size=(H, W), mode='bilinear', align_corners=False)
+        input_mask = F.interpolate(input_mask, size=(H, W), mode='nearest')
+        return input_mask
+
+    def transform_delta(self, delta,epoch, **kwargs):
+        ratio = 0.4 / self.epoch * (epoch + 1) + 0.3  # linear
+
+        input_mask = self.generate_mask(delta,ratio)
+
+        return delta * input_mask
+        
     def forward(self, data, label, **kwargs):
         """
         The general attack procedure
