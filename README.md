@@ -28,7 +28,12 @@ python main.py --input_dir ./path/to/data --output_dir adv_data/mifgsm/resnet18 
 
 ## Overview
 
-Pending!
+<p align="center">
+  <img src="figs/map.jpg" alt="results-of-our-method" width="800"/></br>
+  <span align="center">Black-box attack with the proposed Masked Adversarial Perturbation (MAP). During iterations, we generate diverse soft masks with different mask
+ratios according to iterations t, which masks several patches in the adversarial perturbation to reduce its complexity and improve its diversity. </span> 
+</p>
+
 
 ### 🤗 Masked Adversarial Perturbation
 
