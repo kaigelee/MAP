@@ -105,7 +105,8 @@ class Attack(object):
         momentum = 0
         for _ in range(self.epoch):
             # Obtain the output
-            logits = self.get_logits(self.transform(data+delta, momentum=momentum))
+            logits = self.get_logits(self.transform(data+self.transform_delta(delta,e), momentum=momentum))
+            # logits = self.get_logits(self.transform(data+delta, momentum=momentum))
 
             # Calculate the loss
             loss = self.get_loss(logits, label)
