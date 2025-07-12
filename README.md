@@ -1,8 +1,6 @@
 # MAP
 MAP: Masked Adversarial Perturbation for Boosting Black-box Attack Transferability
 
-By Kaige Li, Maoxian Wan, Qichuan Geng, Xiaochun Cao, Senior Member, IEEE, and Zhong Zhou. 
-
 <img width="2414" height="70" alt="image" src="https://github.com/user-attachments/assets/c4698d6f-840b-4cc2-a635-4f9086c4f09c" />
 
 ## Requirements
